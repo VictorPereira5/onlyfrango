@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(Imagens/frangoAcademiaFundo.jpg);
+    background-image: url(Imagens/FundoPag.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     overflow: hidden;
 }
 
 header{
     background: orange;
     height: 100px;
-    width: 1607px;
     margin: -15px -15px 0px -15px;
 }
 
@@ -23,12 +23,34 @@ header  h1{
 nav a{
     padding: 10px;
     border-radius: 10px;
-    background: gray;
+    background: orange;
     text-decoration: none;
     color: white;
 }
 
 nav a:hover{
     text-decoration: underline;
-    color: blue;
+    color: gray;
+    cursor:pointer;
+}
+
+fieldset{
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 20px;
+    color: gray;
+}
+
+fieldset input{
+    margin-left: 10px;
+}
+
+a{
+    padding: 10px;
+    border-radius: 10px;
+    background: orange;
+    text-decoration: none;
+    color: white;
 }
