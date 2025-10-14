@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body{
+    height: 100vh;
     background-image: url(Imagens/FundoPag.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden;
+    background-size: cover;
 }
 
 header{
