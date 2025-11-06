@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(Imagens/FundoPagDsfoq.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1{
+            text-align: center;
+            margin: 260px 180px 40px 0px;
+            color: orange;
+        }
+
+        fieldset p{
+            color: white;
+            font-size: 1.2em;
+        }
+
+        a{
+            display: inline-block;
+            margin: 10px 45% 0px 46%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Matrícula</h1>
+    <fieldset>
+        <form method="post" action="acesso.py">
+            <p><label>Login <input type="text" placeholder="Email ou nome de usuário"></label></p>
+            <p><label>Senha <input type="password" placeholder="Min 8 caracteres"></label></p>
+        </form>
+    </fieldset>
+    <a href="index.html" rel="before">Página inicial</a>
+</body>
+</html>

@@ -8,12 +8,25 @@
     <style>
         body{
             background-image: url(Imagens/FundoPagDsfoq.png);
+            background-size: cover;
+            background-attachment: fixed;
         }
 
         h1{
             text-align: center;
             margin: 260px 180px 40px 0px;
             color: orange;
+        }
+
+        fieldset p{
+            color: white;
+            font-size: 1.2em;
+        }
+
+        a{
+            display: inline-block;
+            margin: 10px 45% 0px 46%;
+            padding: 10px;
         }
     </style>
 </head>
@@ -23,7 +36,7 @@
         <form method="post" action="acesso.py">
             <p><label>Nome <input maxlength="60" type="text" placeholder="Nome completo"  ></label></p>
             <p><label>Senha <input type="password" maxlength="20"></label></p>
-            <p>Min 8 caracter <br> Pelo menos um número <br> Pelo menos uma letra maíuscula</p>
+            <p style="text-decoration: underline; font-weight: 200;">Min 8 caracter <br> Pelo menos um número <br> Pelo menos uma letra maíuscula</p>
             <p><label>E-mail <input type="email"></label></p>
             <p><label>Vencimento <input type="date"></label></p>
         </form>
