@@ -1,42 +1,55 @@
 @charset "UTF-8";
 
-body{
-    height: 95vh;
-    background-image: url(Imagens/FundoPag.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
-    background: orange;
+    background: rgba(255, 166, 0, 0.815);
     height: 10vh;
-    width: 100.3vw;
-    margin: -15px -5px 0px -15px;
+    width: 100vw;
+    margin: 0px;
 }
 
 header  h1{
     color: white;
-    margin: 0;
-    padding: 30px 0px 0px 40px;
+    margin: 0px;
+    padding: 25px 0px 0px 40px;
 }
 
 
-nav a{
+nav ul{
     padding: 10px;
-    border-radius: 10px;
-    background: orange;
+    color: white;
+    text-align: right;
+}
+
+nav li{
+    display:inline-block;
+    margin-right: 10px;
+}
+
+nav li a{
     text-decoration: none;
     color: white;
 }
 
 nav a:hover{
     text-decoration: underline;
-    color: orange;
-    background: black;
     cursor:pointer;
-    transition-duration: 2s;
+    color: rgba(255, 0, 0, 0.452);
+    transition: color 1s;
+}
+
+section{
+    margin-bottom: 0px;
+    background: url(Imagens/FundoPag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 30vh;
 }
 
 fieldset{
@@ -51,14 +64,6 @@ fieldset{
 
 fieldset input{
     margin-left: 10px;
-}
-
-a{
-    padding: 10px;
-    border-radius: 10px;
-    background: orange;
-    text-decoration: none;
-    color: white;
 }
 
 h2{
