@@ -3,31 +3,36 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+}
+
+:root{
+    --cor0: rgb(0, 0, 0);
+    --cor1: #ff9800;
+    --cor2: #ff5722;
+    --cor3: white;
+}
+
+main{
+    width: 98.3vw;
 }
 
 header{
-    background: rgba(255, 166, 0, 0.87);
+    background: var(--cor0);
     height: 70px;
-    width: 100vw;
     margin: 0px;
     position: sticky;
     top: 0;
 }
 
-header  h1{
-    color: white;
+header h1{
+    color: var(--cor3);
     margin: 0px;
     padding: 20px;
     float: left;
 }
 
-nav{
-    width: 100vw;
-}
-
 nav ul{
-    color: white;
+    color: var(--cor3);
     text-align: right;
     margin-right: 2vw;
     padding-top: 30px;
@@ -39,16 +44,28 @@ nav li{
     font-size: 1.1em;
 }
 
+nav li#login{
+    background-image: linear-gradient(to rigth, var(--cor1), var(--cor2));
+}
+
 a{
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
+}
+
+a#logo{
+    background: linear-gradient(to right, var(--cor1), var(--cor2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 nav a:hover{
     text-decoration: underline;
     cursor:pointer;
-    color: rgba(255, 0, 0, 0.507);
-    transition: color 0.2s;
+    color: var(--cor2);
+    transition: color 0.4s;
 }
 
 section#inicio{
@@ -57,12 +74,12 @@ section#inicio{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height: 70vh;
+    height: 80vh;
 }
 
 .fundo{
-    background: rgba(0, 0, 0, 0.671);
-    height: 70vh;
+    background: rgba(0, 0, 0, 0.466);
+    height: 100vh;
     padding: 0px;
 }
 
@@ -71,7 +88,7 @@ h2{
     transform: translate(10px, 150px);
     font-size: 2em;
     font-weight: bolder;
-    color: white;
+    color: var(--cor3);
     background-color: rgba(255, 0, 0, 0.11);
     box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.055);
     line-height: 40px;
@@ -81,14 +98,14 @@ h2{
 
 #plano{
     display: inline-block;
-    background: black;
+    background: var(--cor0);
     height: 50vh;
-    width: 100vw;
+    width: 100%;
 }
 
 #plano h1{
     text-align: center;
-    background-color: rgba(255, 166, 0, 0.877);
+    background-color: var(--cor1);
 }
 
 fieldset{
